@@ -1,0 +1,41 @@
+<h1>pipe works!</h1>
+<div>
+    There are 2 types of pipes.
+    <ul>
+        <li>Default pipe</li>
+        <li>Custom pipe</li>
+    </ul>
+    <h2>Default Pipes Example</h2>
+    <div>
+        <p style="color: darkgreen;">{{'Jay Shree Krishna' | uppercase}}</p>
+        <p>{{'Lowercase Example' | lowercase}}</p>
+        <p>{{'capitalize example' |titlecase}} </p>
+        <p>{{currentDate | date : 'dd-MMM-yy'}}</p> <!-- MMM means name of that month-->
+        {{currentDate | date : 'dd-MM-yy'}}  <!--  MM month k liye aur mm minutes k liye-->
+
+               <!-- Transform the company name to title-case and
+       transform the purchasedOn date to a locale-formatted string -->
+<p>Purchases from {{ company | titlecase }} on {{ purchasedOn | date }}</p>
+<!-- Transform the amount to a currency-formatted string -->
+<p>Total: {{ amount | currency }}</p>
+    </div>
+
+<div>
+   <h3>JSON Pipe</h3> 
+   Original: {{me}} <br>
+   Using Pipe: {{me | json}}
+   <p>By using JSON Pipe we can print the object</p>
+</div>
+
+<div>
+    <h3>Async Pipe</h3>
+
+</div>
+
+<div>
+    <h3>Custom Pipe</h3>
+    Original value : {{Occupation}} <br>
+    After Pipe : {{Occupation | pracPipe}}
+</div>
+</div>
+<hr>

@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-4">
+        One way => from .ts to .html
+    </div>
+
+    <div class="col-4">
+        
+    </div>
+
+    <div class="col-4">
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <div class="row">
+            <div class="col-4">
+                {{course}}  <!-- Interpolation-->
+            </div>
+            
+            <input type="text" value="{{currentDate}}" placeholder="date here">
+            <input type="{{inputType}}">
+        </div>
+
+        <div class="col-4" >
+            Property Binding => from .html to .ts   
+            <input type="text" [value]="course" > <!--  Same thing using property binding-->
+            <input [type]="inputType1" name="" id="">  <!-- radio button-->
+        </div>
+    </div>
+
+    <div class="col-4">
+        Event Binding
+        <button (click)= "showMessage()">Click me</button>
+        <p>{{message}}</p>
+    </div>
+
+    <div class="col-4">
+        Two way binding => using ngModel
+        <br>
+        Hello {{name}} <br>
+        <input type="text" [(ngModel)]="name" > <hr>
+
+        <select [(ngModel)]="stateName">
+            <option value="">Select</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+        </select>
+<hr>
+City: {{stateName}}
+    </div>
+</div>
+
+<hr>

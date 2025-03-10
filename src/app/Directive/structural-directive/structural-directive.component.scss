@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    justify-content: space-between; /* Ya 'center' */
+    align-items: center;
+    flex-wrap: wrap; /* Agar chhoti screen ho toh neeche aa sake */
+    width: 100%; /* Ya jitna chahiye utna */
+    height: 400px; /* Required height */
+    gap: 10px; /* Box ke beech ka gap */
+}
+
+.box {
+    flex: 1; /* Sab box equal size me honge */
+    min-width: calc(25% - 10px); /* 4 boxes ek line me aaye */
+    height: 100px; /* Ya jitna chahiye */
+    background-color: lightblue; /* Bas dikhne ke liye */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
