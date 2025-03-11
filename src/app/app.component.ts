@@ -4,10 +4,12 @@ import { DataBindingComponent } from './components/data-binding/data-binding.com
 import { SignalComponent } from "./components/signal/signal.component";
 import { PipeComponent } from './components/pipe/pipe.component';
 import { StructuralDirectiveComponent } from './Directive/structural-directive/structural-directive.component';
+import { GetApiComponent } from './api-integration/get-api/get-api.component';
+import { PostApiComponent } from './api-integration/get-api/post-api/post-api.component';
 
 @Component({
   selector: 'app-root',
-  imports: [DataBindingComponent, SignalComponent, PipeComponent, StructuralDirectiveComponent],
+  imports: [DataBindingComponent, SignalComponent, PipeComponent, StructuralDirectiveComponent,GetApiComponent,PostApiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
