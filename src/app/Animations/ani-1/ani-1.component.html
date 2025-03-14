@@ -1,0 +1,5 @@
+<button (click)="toggleVisibility()">Toggle Fade</button>
+
+<div *ngIf="isVisible" [@fadeAnimation]="isVisible ? 'visible' : 'hidden'" class="fade-box">
+  I fade in and out!
+</div>
